@@ -19,7 +19,7 @@ public class BookStore {
          Scanner scanner=new Scanner(System.in);
          System.out.println("How many books do you want to Add: ");
          int size=scanner.nextInt();
-         String[] books=new String[size];
+         String[] books=new String[size];  //2 book size index[0]=1 book, index[1]=2b book
 
 
          //read book properties from user or keyboard
@@ -40,14 +40,16 @@ public class BookStore {
             String isbn=scanner.next();
 
             // bundling all properties
-            String bookInfo=bookTitle+","+bookAuthor+","+bookPrice+","+bookPublisher+","+isbn;
+           String bookInfo=bookTitle+","+bookAuthor+","+bookPrice+","+bookPublisher+","+isbn;
+
+
             books[i]=bookInfo;
 
          }
 
          //Display list of book
 
-        System.out.print("    "+"Title"+"      ");
+       System.out.print("    "+"Title"+"      ");
         System.out.print("    "+"Author"+"    ");
         System.out.print("    "+"Price"+"    ");
         System.out.print("    "+"Publisher"+"    ");
@@ -61,7 +63,7 @@ public class BookStore {
 
         // Get all book list
 
-         for(String book:books){
+         for(String book:books){  //(bookTitle,bookAuthor,bookPrice,bookPublisher,isbn)
              String[] singleBook=book.split(",");
              System.out.print("    "+singleBook[0]+"    ");
              System.out.print("    "+singleBook[1]+"    ");
@@ -73,22 +75,22 @@ public class BookStore {
 
          // Calculate books Stock
 
-        double totalCost=0;
+        double totalCost=200;//300+200+----- //500
         double maximum=0;
-        double minimum=0;
+        double minimum=0; //300
 
         for(String book:books){
             String[] singleBook=book.split(",");
             double bookPrice=Double.parseDouble(singleBook[2]);
 
-            totalCost+=bookPrice;
+            totalCost+=bookPrice; // totalCost=totalCost+bookPrice; 300,200
 
-            if(bookPrice>maximum){
-                maximum=bookPrice;
+            if(bookPrice>maximum){  //300>0, 400>300
+                maximum=bookPrice;  //maximum=400
             }
 
-            minimum=bookPrice;
-            if(bookPrice<minimum){
+            minimum=bookPrice;  //300 ,400
+            if(bookPrice<minimum){// 200<300
                 minimum=bookPrice;
             }
 
