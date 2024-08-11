@@ -21,7 +21,7 @@ public class DataType {
 
         //for short
         System.out.println("----------------------------------------------------------------------------");
-        System.out.print("|  1      |");
+        System.out.print("|  2      |");
         System.out.print("   short     |") ;
         System.out.print("    "+Short.SIZE+"    |");
         System.out.print("       "+Short.MIN_VALUE+"      |");
@@ -29,7 +29,7 @@ public class DataType {
 
         //for int
         System.out.println("----------------------------------------------------------------------------------");
-        System.out.print("|  1      |");
+        System.out.print("|  3      |");
         System.out.print("     int     |") ;
         System.out.print("   "+Integer.SIZE+"     |");
         System.out.print("     "+Integer.MIN_VALUE+"   |");
@@ -38,7 +38,7 @@ public class DataType {
 
         //for long
         System.out.println("--------------------------------------------------------------------------------");
-        System.out.print("|  1      |");
+        System.out.print("|  4      |");
         System.out.print("    long     |") ;
         System.out.print("    "+Long.SIZE+"    |");
         System.out.print("  "+Long.MIN_VALUE+"  |");
@@ -46,7 +46,7 @@ public class DataType {
 
         //for float
         System.out.println("------------------------------------------------------------------------------------");
-        System.out.print("|  1      |");
+        System.out.print("|  5      |");
         System.out.print("   float     |") ;
         System.out.print("    "+Float.SIZE+"    |");
         System.out.print("    "+Float.MIN_VALUE+"    |");
@@ -54,7 +54,7 @@ public class DataType {
 
         //for double
         System.out.println("-----------------------------------------------------------------------------------");
-        System.out.print("|  1      |");
+        System.out.print("|  6      |");
         System.out.print("   double     |") ;
         System.out.print("    "+Double.SIZE+"    |");
         System.out.print("    "+Double.MIN_VALUE+"    |");
@@ -63,7 +63,7 @@ public class DataType {
 
         //for char
         System.out.println("----------------------------------------------------------------------------------");
-        System.out.print("|  1      |");
+        System.out.print("|  7      |");
         System.out.print("     char     |") ;
         System.out.print("       "+Character.SIZE+"    |");
         System.out.print("       "+Character.MIN_VALUE+"       |");
@@ -72,7 +72,7 @@ public class DataType {
 
         //for boolean
         System.out.println("----------------------------------------------------------------------------------");
-        System.out.print("|  1      |");
+        System.out.print("|  8      |");
         System.out.print("     boolean     |") ;
         System.out.print("        No Size     |");
         System.out.print("     Null     |");
